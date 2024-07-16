@@ -1,0 +1,144 @@
+#Data Type
+
+1. Numeric Data Type
+	. int--------> 10,2,11
+	. float-------->10.00, 11.23
+	. complex-------> (3+4j)  # we use 'j' instead of iota 'i'
+------------------------------------------------------------------
+2. Boolean Data type
+	. True
+	. False
+------------------------------------------------------------------
+3. Sequence Data Type
+	. String 
+	. List
+	. Tuple
+
+-------------------------------------------------------------------------------------------
+
+## FUNCTIONS 
+	1. User defined functions - defined by the user
+	2. Library functions
+	3. In Built functions					
+	
+
+-------------------------------------------------------------------------------------------
+
+# STRING
+	> String is the sequence of characters
+	> Strings are immutable(not changeble)
+	> Strings have zero based indexing from left to right (inlcuding spaces)
+	> When indexing is from R->L, it starts from -1
+	> SLICING - getting a part from the whole string
+	Eg-  a = 'Hello World'
+	    printing only 'Hello' => a[0:6:1] -------> startIndex : EndIndex + 1 : Step	 										  Counter
+	Eg-  a='Hello World'
+	    printing 'olleH' =>  a[-7:-12:-1] 
+
+	> In built functions in string:
+		. Func to check whether string is in upper or lower case
+			  
+			   a='Hello World'
+
+			   a.isupper()
+			   >>> False
+
+			   a.islower()
+			   >>> False
+		
+		. Func to change the case of the string
+
+			a='Hello World'
+			a.upper()
+			>>> 'HELLO WORLD'
+
+			a.lower()
+			>>> 'hello world'
+
+		. Func to print the text in center using space or ccenter 
+			
+			a.center(25)
+			>>> '       Hello World       '
+	
+			a.center(25, '@')
+			>>> '@@@@@@@Hello World@@@@@@@'
+		
+		. Func to print string in title case
+			a='hello python'
+			a.title()
+			>>> 'Hello Python'
+		
+		. Func to check the first letters of the string
+			a='hello python'
+			a.startswith('he')
+			>>> True
+			a.startswith('HE')
+			>>> False
+
+
+
+-------------------------------------------------------------------------------------------
+
+## LIST 
+	> It is denoted by '[]' (square brackets)
+	> It is a mutable data type (changeble)
+	> List has zero base indexing from L to R
+	> Indexing and Slicing in list is same as that of string
+	> Slicing of list :
+			a = [1,2,3,4]
+			a[0:3]
+			>>> [1, 2, 3]
+	> Inbuilt functions of List
+		. Func to add an element at last
+			
+			a=[1,2,3,4,5]
+			a.append(6)
+			a
+			>>> [1, 2, 3, 4, 5, 6]
+
+		. Func to remove element from list (returns the removed element)
+			a=[1,2,3,4,5]
+			a.pop()
+			>>> 5
+			a
+			>>> [1, 2, 3, 4]
+			a.pop(2)
+			>>> 3
+			a
+			>>> [1, 2, 4]
+
+## TUPLE 
+	> Tuple is denoted by '()' 
+	> Tuple is immutable
+	> Tuple supports indexing and slicing
+	> Eg -
+		a={1,2,3,4,5}
+		type(a)
+		>>>  <class 'set'>
+		a=(1,2,3,4)
+		type(a)
+		>>> <class 'tuple'>
+		a[2]
+		>>> 3
+			
+## SETS
+	> Sets are denoted by '{}'
+	> They do not support indexing and slicing
+	> Sets are used to remove duplicacy. Is does not contain duplicate elements
+	> There is no order in which data is stored
+	> Eg -
+		a={1,2,3,3,3,4,5,6,6}
+		a	
+		>>> {1, 2, 3, 4, 5, 6}
+	
+
+	> Eg of set -
+		a={1,2,3,4,5}
+		type(a)
+		>>>  <class 'set'>
+
+
+	
+			
+
+	
